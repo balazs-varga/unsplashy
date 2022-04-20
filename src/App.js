@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React from 'react';
-import SearchBar from './components/SearchBar';
-import ImageList from './components/ImageList';
+import SearchBar from './components/search-bar/SearchBar';
+import ImageList from './components/image-list/ImageList';
 
 const UNSPLASH_API_KEY = process.env.REACT_APP_UNSPLASH_API_KEY;
 const BASE_UNSPLASH_API_URL = 'https://api.unsplash.com';

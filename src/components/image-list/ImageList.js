@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageCard from './ImageCard';
+import ImageCard from '../image-card/ImageCard';
 import './ImageList.css';
 
 const ImageList = ({ images }) => {
