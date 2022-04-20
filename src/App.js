@@ -1,6 +1,7 @@
-import axios from "axios";
-import React from "react";
-import SearchBar from "./components/SearchBar";
+import axios from 'axios';
+import React from 'react';
+import SearchBar from './components/SearchBar';
+import ImageList from './components/ImageList';
 
 const UNSPLASH_API_KEY = process.env.REACT_APP_UNSPLASH_API_KEY;
 const BASE_UNSPLASH_API_URL = 'https://api.unsplash.com';
@@ -25,6 +26,7 @@ class App extends React.Component {
       <div>
         <SearchBar userSubmit={this.onSearchSubmit} />
         <span>Found: {this.state.images.length} images</span>
+        <ImageList images={this.state.images} />
       </div>
     );
   }
